@@ -1,0 +1,95 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"16 ../../../tp2_b.X/ecran.c
+[; ;../../../tp2_b.X/ecran.c: 16:     EUSART1_Write(0x41);
+[v _EUSART1_Write `(i ~T0 @X0 0 e? ]
+"13 ../../../tp2_b.X/ecran.c
+[; ;../../../tp2_b.X/ecran.c: 13: void ecranAllume(void)
+[v _ecranAllume `(v ~T0 @X0 1 ef ]
+"14
+[; ;../../../tp2_b.X/ecran.c: 14: {
+{
+[e :U _ecranAllume ]
+[f ]
+"16
+[; ;../../../tp2_b.X/ecran.c: 16:     EUSART1_Write(0x41);
+[e ( _EUSART1_Write -> 65 `i ]
+"17
+[; ;../../../tp2_b.X/ecran.c: 17: }
+[e :UE 1 ]
+}
+"19
+[; ;../../../tp2_b.X/ecran.c: 19: void ecranEteint(void)
+[v _ecranEteint `(v ~T0 @X0 1 ef ]
+"20
+[; ;../../../tp2_b.X/ecran.c: 20: {
+{
+[e :U _ecranEteint ]
+[f ]
+"22
+[; ;../../../tp2_b.X/ecran.c: 22:     EUSART1_Write(0x42);
+[e ( _EUSART1_Write -> 66 `i ]
+"23
+[; ;../../../tp2_b.X/ecran.c: 23: }
+[e :UE 2 ]
+}
+"25
+[; ;../../../tp2_b.X/ecran.c: 25: void curseurposition(int Position)
+[v _curseurposition `(v ~T0 @X0 1 ef1`i ]
+"26
+[; ;../../../tp2_b.X/ecran.c: 26: {
+{
+[e :U _curseurposition ]
+"25
+[; ;../../../tp2_b.X/ecran.c: 25: void curseurposition(int Position)
+[v _Position `i ~T0 @X0 1 r1 ]
+"26
+[; ;../../../tp2_b.X/ecran.c: 26: {
+[f ]
+"28
+[; ;../../../tp2_b.X/ecran.c: 28:     EUSART1_Write(0x45);
+[e ( _EUSART1_Write -> 69 `i ]
+"29
+[; ;../../../tp2_b.X/ecran.c: 29:     EUSART1_Write(Position);
+[e ( _EUSART1_Write _Position ]
+"32
+[; ;../../../tp2_b.X/ecran.c: 32: }
+[e :UE 3 ]
+}
+"34
+[; ;../../../tp2_b.X/ecran.c: 34: void ecrireCaractere(char caractere)
+[v _ecrireCaractere `(v ~T0 @X0 1 ef1`uc ]
+"35
+[; ;../../../tp2_b.X/ecran.c: 35: {
+{
+[e :U _ecrireCaractere ]
+"34
+[; ;../../../tp2_b.X/ecran.c: 34: void ecrireCaractere(char caractere)
+[v _caractere `uc ~T0 @X0 1 r1 ]
+"35
+[; ;../../../tp2_b.X/ecran.c: 35: {
+[f ]
+"37
+[; ;../../../tp2_b.X/ecran.c: 37:     EUSART1_Write(caractere);
+[e ( _EUSART1_Write -> _caractere `i ]
+"39
+[; ;../../../tp2_b.X/ecran.c: 39: }
+[e :UE 4 ]
+}
+"41
+[; ;../../../tp2_b.X/ecran.c: 41: void videEcran(void)
+[v _videEcran `(v ~T0 @X0 1 ef ]
+"42
+[; ;../../../tp2_b.X/ecran.c: 42: {
+{
+[e :U _videEcran ]
+[f ]
+"43
+[; ;../../../tp2_b.X/ecran.c: 43:     EUSART1_Write(0xFE);
+[e ( _EUSART1_Write -> 254 `i ]
+"44
+[; ;../../../tp2_b.X/ecran.c: 44:     EUSART1_Write(0x51);
+[e ( _EUSART1_Write -> 81 `i ]
+"47
+[; ;../../../tp2_b.X/ecran.c: 47: }
+[e :UE 5 ]
+}
